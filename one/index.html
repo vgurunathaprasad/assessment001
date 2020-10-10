@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+body {font-family: "Roboto";}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: rgb(161, 161, 161);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid black;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: white;
+  color: black;
+  padding: 5px 2px;
+  border: none;
+  cursor: pointer;
+  width:30%;
+}
+
+.error{
+    border:2px solid red;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+
+<script>
+document.getElementById("submitb").addEventListener("click", function(event){
+  event.preventDefault();
+
+var in0 = document.getElementById("in0");
+if(!in0.value){
+    in0.classList.add("error");
+}
+
+var in1 = document.getElementById("in1");
+if(!in1.value){
+    in1.classList.add("error");
+}
+var in2 = document.getElementById("in2");
+if(!in2.value){
+    in2.classList.add("error");
+}
+var in3 = document.getElementById("in3");
+if(!in3.value){
+    in3.classList.add("error");
+}
+var in4 = document.getElementById("in4");
+if(!in4.value){
+    in4.classList.add("error");
+}
+var in5 = document.getElementById("in5");
+if(!in5.value){
+    in5.classList.add("error");
+}
+var in6 = document.getElementById("in6");
+if(!in6.value){
+    in6.classList.add("error");
+}
+
+var in7 = document.getElementById("in7");
+if(!in7.value){
+    in7.classList.add("error");
+}
+
+});
+
+function removeErr() {
+    this.classList.remove("error");
+}
+</script>
+
+</head>
+<body >
+<div style="margin-left: 25%;margin-right: 25%; padding-top:3%; padding-bottom: 3%; background-color:rgb(214, 213, 213)">
+<form style="max-width:500px;margin:auto">
+  <h2>Register Form</h2>
+
+  <div style="display: flex;">
+      <div style="margin-right:60px;">Fullname</div>
+    <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="Fullname" id="in0">
+      </div>
+  </div>
+
+  <div style="display: flex;">
+    <div style="padding-right:60px;">Address Line 1</div>
+  <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Address Line 1" id="in1">
+    </div>
+</div>
+<div style="display: flex;">
+    <div style="padding-right:60px;">Address Line 2</div>
+  <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Address Line 2" id="in2">
+    </div>
+</div>
+<div style="display: flex;">
+    <div style="padding-right:60px;">City</div>
+  <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="City" id="in3">
+    </div>
+</div>
+<div style="display: flex;">
+    <div style="padding-right:60px;">State</div>
+  <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="State" id="in4">
+    </div>
+</div>
+<div style="display: flex;">
+    <div style="padding-right:60px;">Postalcode</div>
+  <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Postalcode" id="in5">
+    </div>
+</div>
+<div style="display: flex;">
+    <div style="padding-right:60px;">Country</div>
+  <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Country" id="in6">
+    </div>
+</div>
+<div style="display: flex;">
+    <div style="padding-right:60px;">E-mail</div>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+      <input class="input-field" type="text" placeholder="E-mail" id="in7" required>
+    </div>
+</div>
+
+  <button  id="submitb" class="btn">Submit</button>
+</form>
+
+</div>
+
+</body>
+</html>
