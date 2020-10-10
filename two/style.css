@@ -1,0 +1,13 @@
+main{
+    font-family: "Lato";
+}
+
+.container{
+    position: relative;
+    margin-left: 20%;
+    color:red;
+}
+
+.nav{
+    float:right;
+}
